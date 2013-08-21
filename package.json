@@ -1,0 +1,19 @@
+{
+    "family": "seedit",
+    "version": "0.0.1",
+    "name": "cookie",
+    "description": "相对时间转换",
+    "keywords": [ "utility" ],
+    "author": "airyalnd <i@mao.com>",
+    "maintainers": [
+       "airyalnd <i@mao.com>"
+    ],
+    "homepage": "https://github.com/airyland/seedit.friendlyDate",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/airyland/seedit.friendlyDate"
+    },
+    "bugs": {
+        "url": "https://github.com/airyland/seedit.friendlyDate/issues"
+    }
+}

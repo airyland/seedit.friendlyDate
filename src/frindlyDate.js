@@ -4,13 +4,13 @@
 			diff = (((new Date()).getTime() - date.getTime()) / 1000),
 			day_diff = Math.floor(diff / 86400);
 		var formatDate = function(date) {
-			var today = new Date(date)
-			var year = today.getYear();
-			var month = today.getMonth() + 1;
-			var date = today.getDate();
-			var hour = today.getHours();
-			var minute = today.getMinutes();
-			var second = today.getSeconds();
+			var today = new Date(date),
+				year = today.getYear(),
+				month = today.getMonth() + 1,
+				date = today.getDate(),
+				hour = today.getHours(),
+				minute = today.getMinutes(),
+				second = today.getSeconds();
 			return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
 		};
 

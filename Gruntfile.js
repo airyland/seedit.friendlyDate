@@ -33,6 +33,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-qunit');
 
-    grunt.registerTask('default', ['jshint', 'qunit']);
+    grunt.registerTask('default', ['jshint', 'qunit', 'uglify']);
     grunt.registerTask('ci', ['default']);
 };

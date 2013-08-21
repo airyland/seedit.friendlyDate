@@ -3,6 +3,13 @@
 		var date = (typeof time === 'number') ? new Date(time) : new Date((time || "").replace(/-/g, "/").replace(/[TZ]/g, " ")),
 			diff = (((new Date()).getTime() - date.getTime()) / 1000),
 			day_diff = Math.floor(diff / 86400);
+
+		var isValidDate = Object.prototype.toString.call(date) === "[object Date]" && !isNaN(date.getTime());
+		
+		if(!isValidDate){
+			 return 'not a valid date';
+		}
+
 		var formatDate = function(date) {
 			var today = new Date(date),
 				year = today.getFullYear(),
